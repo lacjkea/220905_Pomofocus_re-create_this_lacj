@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "arial-rounded-regular";
   src: url("https://www.dafontfree.net/data/1/a/20/unicode.arialr.ttf")
       format("woff"),
@@ -6,7 +6,7 @@
       format("opentype"),
     url("https://www.dafontfree.net/data/1/a/20/unicode.arialr.ttf")
       format("truetype");
-}
+} */
 
 :root {
   font-size: 100%;
