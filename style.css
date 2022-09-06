@@ -1,0 +1,130 @@
+:root {
+  font-size: 100%;
+  --space: 0.5rem;
+  /* --space-l: calc(var(--space) * 1.5); */
+  --c-bg: #db524d;
+  /* --c-bg-timer: #df645f; */
+  --c-bg-timer: rgba(255, 255, 255, 0.15); /* #e06e6b */
+  --f-c: #fff;
+  --br: calc(var(--space) / 2);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body,
+button {
+  /* font-family: Arial; */
+  font-family: "arial-rounded-regular", sans-serif;
+  color: var(--f-c);
+  /* height: 100vh; */
+}
+
+body {
+  background-color: var(--c-bg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c54a45;
+  width: clamp(50%, 320px, 600px);
+  margin: calc(var(--space) * 1.5) auto;
+  padding-bottom: calc(var(--space) * 1.5);
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+h1::before {
+  content: "✓";
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--f-c);
+  color: var(--c-bg);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space);
+}
+
+nav button {
+  display: flex;
+  align-items: flex-end;
+  gap: calc(var(--space) / 2);
+  padding: var(--space) calc(1.5 * var(--space));
+  background-color: var(--c-bg-timer);
+  border-radius: var(--br);
+}
+
+/*nav svg {
+     height: 1em;
+  width: 1em; 
+}*/
+
+.timer-wrapper {
+  width: clamp(40%, 280px, 500px);
+  margin: 0 auto;
+}
+
+.timer {
+  padding: 2rem;
+  background: var(--c-bg-timer);
+}
+
+.timer .buttons {
+  display: flex;
+  gap: calc(1.5 * var(--space));
+  justify-content: center;
+}
+
+.timer .buttons button {
+  /* background: black; */
+  padding: var(--space) calc(1.5 * var(--space));
+  border-radius: var(--br);
+  font-weight: bold;
+}
+
+.active {
+  background: #be5551;
+}
+
+.timer time {
+  display: block;
+  width: 100%;
+  /* background-color: black; */
+  font-size: 12vw;
+  text-align: center;
+}
+.bi-three-dots-vertical {
+  border: 1px solid black;
+  border-radius: var(--br);
+}
