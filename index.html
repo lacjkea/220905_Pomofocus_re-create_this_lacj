@@ -84,7 +84,7 @@
         <button class="startstop">START</button>
       </div>
       <!-- END .timer -->
-      <h3>WORKING ON<span>Milk the cat</span></h3>
+      <h3><span>WORKING ON</span>Milk the cat</h3>
       <div class="tasks-header">
         <h2>Tasks</h2>
         <button>
@@ -103,13 +103,12 @@
         </button>
       </div>
       <!-- END .tasks-header -->
-      <ul>
+      <ul class="tasklist">
         <li>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="currentColor"
             class="bi bi-check-circle-fill"
             viewBox="0 0 16 16"
           >
@@ -168,7 +167,7 @@
             </svg>
           </button>
         </li>
-        <li>
+        <li class="add-task">
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +182,7 @@
               />
             </svg>
           </button>
-          <span class="add-task">Add Task</span>
+          <span>Add Task</span>
         </li>
       </ul>
       <footer>
@@ -191,9 +190,13 @@
           <div class="est">
             <dt>Est:</dt>
             <dd>1</dd>
+          </div>
+          <div class="act">
             <dt>Act:</dt>
             <dd>0</dd>
-            <dt>Finish at:</dt>
+          </div>
+          <div class="finishat">
+            <dt>Finish at</dt>
             <dd><time datetime="13:57">13:57</time></dd>
           </div>
         </dl>
